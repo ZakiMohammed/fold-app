@@ -1,0 +1,10 @@
+@if (pageTitle() && pageTitle()?.title) {
+  <div class="border-bottom pb-2 mb-4">
+    <h4>
+      @if (pageTitle()?.icon) {
+        <i [class]="'text-success bi bi-' + pageTitle()?.icon"></i>
+      }
+      {{ getCleanTitle(pageTitle()?.title) }}
+    </h4>
+  </div>
+}
