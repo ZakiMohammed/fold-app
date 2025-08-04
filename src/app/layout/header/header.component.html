@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-md bg-body-tertiary">
+<nav class="navbar navbar-expand-md bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" [routerLink]="['/']">
-      <i class="bi bi-airplane-fill text-success"></i>
+      <i class="bi bi-bag px-2 bg-primary text-dark rounded"></i>
       {{ appConstants.APP_NAME }}
     </a>
     <button
@@ -21,7 +21,7 @@
             class="nav-link"
             aria-current="page"
             [routerLink]="['/']"
-            [routerLinkActive]="'text-success'"
+            [routerLinkActive]="'bg-primary text-dark rounded'"
             [routerLinkActiveOptions]="{ exact: true }"
             (click)="navbarCollapse()">
             <i class="bi bi-house-fill"></i>
@@ -31,30 +31,30 @@
         <li class="nav-item px-md-1">
           <a
             class="nav-link"
-            [routerLink]="['/posts']"
-            [routerLinkActive]="'text-success'"
+            [routerLink]="['/categories']"
+            [routerLinkActive]="'bg-primary text-dark rounded'"
             [routerLinkActiveOptions]="{ exact: false }"
             (click)="navbarCollapse()">
-            <i class="bi bi-file-image"></i>
-            Posts
+            <i class="bi bi-card-checklist"></i>
+            Categories
           </a>
         </li>
         <li class="nav-item px-md-1">
           <a
             class="nav-link"
-            [routerLink]="['/todos']"
-            [routerLinkActive]="'text-success'"
+            [routerLink]="['/products']"
+            [routerLinkActive]="'bg-primary text-dark rounded'"
             [routerLinkActiveOptions]="{ exact: false }"
             (click)="navbarCollapse()">
-            <i class="bi bi-card-checklist"></i>
-            Todos
+            <i class="bi bi-rocket-takeoff-fill"></i>
+            Products
           </a>
         </li>
         <li class="nav-item px-md-1">
           <a
             class="nav-link"
             [routerLink]="['/about']"
-            [routerLinkActive]="'text-success'"
+            [routerLinkActive]="'bg-primary text-dark rounded'"
             [routerLinkActiveOptions]="{ exact: false }"
             (click)="navbarCollapse()">
             <i class="bi bi-heart-half"></i>

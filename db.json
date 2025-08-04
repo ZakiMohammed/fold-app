@@ -230,5 +230,111 @@
         "bs": "target end-to-end models"
       }
     }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "LV Bag",
+      "description": "A stylish bag for everyday use. Perfect for carrying your essentials. Available in various colors. Made from durable materials. Lightweight and easy to carry. Features multiple compartments for organization. Ideal for travel or daily errands. Dimensions: 15x10x5 inches. Weight: 1.2 lbs. Water-resistant design. Machine washable. Comes with a 1-year warranty. Affordable price point. Great for students and professionals alike. Versatile and functional. A must-have accessory. Perfect for gifting. Available in stores and online. Limited stock available. Order now!",
+      "price": 29.99,
+      "category": "Bag"
+    },
+    {
+      "id": 2,
+      "name": "Metro Shoes",
+      "description": "Comfortable and stylish shoes for all occasions. Made with high-quality materials. Available in various sizes and colors. Perfect for casual outings or formal events. Features cushioned insoles for added comfort. Durable and long-lasting design. Easy to clean and maintain. Lightweight construction for all-day wear. Ideal for walking or running. Breathable fabric to keep your feet cool. Stylish design that complements any outfit. Affordable price without compromising quality. Great for both men and women.",
+      "price": 49.99,
+      "category": "Shoes"
+    },
+    {
+      "id": 3,
+      "name": "Classic Watch",
+      "description": "A classic watch that combines elegance and functionality. Features a stainless steel case and leather strap. Water-resistant up to 50 meters. Quartz movement for accurate timekeeping. Available in silver and gold finishes. Perfect for both casual and formal wear. Scratch-resistant glass for durability. Adjustable strap for a comfortable fit. Comes in a stylish gift box. Ideal for gifting on special occasions. Limited edition design. Affordable luxury watch option. Great for collectors and enthusiasts.",
+      "price": 19.99,
+      "category": "Watch"
+    },
+    {
+      "id": 4,
+      "name": "Smartphone Case",
+      "description": "Protective case for your smartphone. Made from high-quality silicone material. Slim design that fits easily in your pocket. Available in various colors and patterns. Provides full access to all ports and buttons. Shock-absorbent to protect against drops. Lightweight and easy to install. Compatible with most smartphone models. Ideal for everyday use. Affordable price point. Perfect for personal use or as a gift.",
+      "price": 9.99,
+      "category": "Accessories"
+    },
+    {
+      "id": 5,
+      "name": "Wireless Earbuds",
+      "description": "High-quality wireless earbuds with noise cancellation. Bluetooth connectivity for easy pairing. Long battery life for extended use. Comfortable fit for all-day wear. Comes with a charging case. Available in black and white colors. Ideal for music lovers and commuters. Sweat-resistant design for workouts. Compact and portable. Affordable price for premium features.",
+      "price": 39.99,
+      "category": "Electronics"
+    },
+    {
+      "id": 6,
+      "name": "Yoga Mat",
+      "description": "Non-slip yoga mat for all fitness levels. Made from eco-friendly materials. Extra thick for added comfort. Lightweight and portable design. Ideal for yoga, pilates, and workouts. Available in various colors. Easy to clean and maintain. Durable and long-lasting. Perfect for home or gym use. Affordable price for quality product.",
+      "price": 19.99,
+      "category": "Fitness"
+    },
+    {
+      "id": 7,
+      "name": "Coffee Maker",
+      "description": "Automatic coffee maker for brewing fresh coffee. Programmable settings for convenience. Compact design that fits on any countertop. Easy to use and clean. Ideal for home or office use. Durable construction with stainless steel finish. Comes with a glass carafe. Affordable price for quality appliance.",
+      "price": 49.99,
+      "category": "Home Appliances"
+    },
+    {
+      "id": 8,
+      "name": "Backpack",
+      "description": "Spacious and durable backpack for travel or school. Multiple compartments for organization. Padded straps for comfort. Water-resistant material to protect your belongings. Stylish design available in various colors. Ideal for students and professionals alike. Affordable price point.",
+      "price": 29.99,
+      "category": "Bags"
+    },
+    {
+      "id": 9,
+      "name": "Bluetooth Speaker",
+      "description": "Portable Bluetooth speaker with high-quality sound. Long battery life for extended use. Compact and lightweight design. Ideal for outdoor activities or home use. Available in various colors. Easy to connect with smartphones and tablets. Affordable price for premium features.",
+      "price": 39.99,
+      "category": "Electronics"
+    },
+    {
+      "id": 10,
+      "name": "Fitness Tracker",
+      "description": "Advanced fitness tracker with heart rate monitor. Tracks steps, calories burned, and sleep patterns. Waterproof design for swimming and workouts. Syncs with smartphone apps for detailed analysis. Comfortable wristband available in multiple colors. Affordable price for health-conscious individuals.",
+      "price": 49.99,
+      "category": "Fitness"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Bag"
+    },
+    {
+      "id": 2,
+      "name": "Shoes"
+    },
+    {
+      "id": 3,
+      "name": "Watch"
+    },
+    {
+      "id": 4,
+      "name": "Accessories"
+    },
+    {
+      "id": 5,
+      "name": "Electronics"
+    },
+    {
+      "id": 6,
+      "name": "Fitness"
+    },
+    {
+      "id": 7,
+      "name": "Home Appliances"
+    },
+    {
+      "id": 8,
+      "name": "Bags"
+    }
   ]
 }

@@ -1,0 +1,93 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <!-- Back Button -->
+      <div class="mb-4">
+        <button class="btn btn-outline-secondary" (click)="goBack()">
+          <i class="bi bi-arrow-left me-2"></i>Back to Products
+        </button>
+      </div>
+
+      @if (product$ | async; as product) {
+        <div class="row">
+          <!-- Product Image - Left Side -->
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+            <div class="card shadow-sm">
+              <img 
+                [src]="'https://picsum.photos/600/400?random=' + product.id" 
+                [alt]="product.name"
+                class="card-img-top bg-light"
+                style="height: 400px; object-fit: cover;">
+            </div>
+          </div>
+
+          <!-- Product Details - Right Side -->
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="product-details h-100">
+              <!-- Product Title -->
+              <h1 class="display-5 fw-bold text-dark mb-3">{{ product.name }}</h1>
+              
+              <!-- Category Badge -->
+              <div class="mb-3">
+                <span class="badge bg-secondary fs-6 px-3 py-2">{{ product.category }}</span>
+              </div>
+
+              <!-- Price -->
+              <div class="mb-4">
+                <h2 class="text-primary fw-bold mb-0">${{ product.price | number:'1.2-2' }}</h2>
+              </div>
+
+              <!-- Description -->
+              <div class="mb-4">
+                <h4 class="text-dark mb-3">Description</h4>
+                <p class="lead text-muted">{{ product.description }}</p>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="d-flex gap-3 mb-4">
+                <button class="btn btn-primary btn-lg">
+                  <i class="bi bi-cart-plus me-2"></i>Add to Cart
+                </button>
+                <button class="btn btn-outline-secondary btn-lg">
+                  <i class="bi bi-heart me-2"></i>Add to Wishlist
+                </button>
+              </div>
+
+              <!-- Product Details Table -->
+              <div class="card border-0 bg-light">
+                <div class="card-body">
+                  <h5 class="card-title text-dark mb-3">Product Information</h5>
+                  <div class="row">
+                    <div class="col-sm-4"><strong>Product ID:</strong></div>
+                    <div class="col-sm-8">{{ product.id }}</div>
+                  </div>
+                  <hr class="my-2">
+                  <div class="row">
+                    <div class="col-sm-4"><strong>Category:</strong></div>
+                    <div class="col-sm-8">{{ product.category }}</div>
+                  </div>
+                  <hr class="my-2">
+                  <div class="row">
+                    <div class="col-sm-4"><strong>Price:</strong></div>
+                    <div class="col-sm-8">${{ product.price | number:'1.2-2' }}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      } @else {
+        <!-- Loading State -->
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex justify-content-center align-items-center" style="min-height: 400px;">
+              <div class="loader">
+                <i class="bi bi-snow text-primary fs-1"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>

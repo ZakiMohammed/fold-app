@@ -1,0 +1,93 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <!-- Back Button -->
+      <div class="mb-4">
+        <button class="btn btn-outline-secondary" (click)="goBack()">
+          <i class="bi bi-arrow-left me-2"></i>Back to Categories
+        </button>
+      </div>
+
+      @if (category$ | async; as category) {
+        <div class="row">
+          <!-- Category Image - Left Side -->
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+            <div class="card shadow-sm">
+              <img 
+                [src]="'https://picsum.photos/600/400?random=' + category.id" 
+                [alt]="category.name"
+                class="card-img-top bg-light"
+                style="height: 400px; object-fit: cover;">
+            </div>
+          </div>
+
+          <!-- Category Details - Right Side -->
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="category-details h-100">
+              <!-- Category Title -->
+              <h1 class="display-4 fw-bold text-dark mb-4">{{ category.name }}</h1>
+              
+              <!-- Category ID Badge -->
+              <div class="mb-4">
+                <span class="badge bg-primary fs-6 px-3 py-2">ID: {{ category.id }}</span>
+              </div>
+
+              <!-- Category Description -->
+              <div class="mb-4">
+                <h4 class="text-dark mb-3">About This Category</h4>
+                <p class="lead text-muted">
+                  Explore our wide range of {{ category.name | lowercase }} products. 
+                  We offer quality items in this category with competitive prices and excellent customer service.
+                </p>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="d-flex gap-3 mb-4">
+                <button class="btn btn-primary btn-lg">
+                  <i class="bi bi-grid me-2"></i>View Products
+                </button>
+                <button class="btn btn-outline-secondary btn-lg">
+                  <i class="bi bi-bookmark me-2"></i>Follow Category
+                </button>
+              </div>
+
+              <!-- Category Information Card -->
+              <div class="card border-0 bg-light">
+                <div class="card-body">
+                  <h5 class="card-title text-dark mb-3">Category Information</h5>
+                  <div class="row">
+                    <div class="col-sm-4"><strong>Category ID:</strong></div>
+                    <div class="col-sm-8">{{ category.id }}</div>
+                  </div>
+                  <hr class="my-2">
+                  <div class="row">
+                    <div class="col-sm-4"><strong>Category Name:</strong></div>
+                    <div class="col-sm-8">{{ category.name }}</div>
+                  </div>
+                  <hr class="my-2">
+                  <div class="row">
+                    <div class="col-sm-4"><strong>Status:</strong></div>
+                    <div class="col-sm-8">
+                      <span class="badge bg-primary">Active</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      } @else {
+        <!-- Loading State -->
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex justify-content-center align-items-center" style="min-height: 400px;">
+              <div class="loader">
+                <i class="bi bi-snow text-primary fs-1"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</div>
